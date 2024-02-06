@@ -1,11 +1,18 @@
 import React from 'react'
 import bgimage3 from '../../images/bgimage3.jpg'
+import Navbar from '../Navbar/Navbar'
+import Banner from './Banner'
+import { useState } from 'react'
+import Login from '../pages/Login'
+import PopularCars from './PopularCars'
+
 
 const Home = () => {
+    const [IsLogin, setIsLogin] = useState(false);
     return (
-        <div style={{ height: '70vh', overflow: 'hidden' }}>
-            <img src={bgimage3} alt="BackGroundImage" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-
+        <div >
+         <Banner/>
+         <PopularCars/>
         </div>
     )
 }
