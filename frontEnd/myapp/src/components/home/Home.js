@@ -5,6 +5,8 @@ import Banner from './Banner'
 import { useState } from 'react'
 import Login from '../pages/Login'
 import PopularCars from './PopularCars'
+import ExploreCars from './ExploreCars'
+import Booking from './Booking'
 
 
 const Home = () => {
@@ -13,6 +15,8 @@ const Home = () => {
         <div >
          <Banner/>
          <PopularCars/>
+         <Booking/>
+         <ExploreCars/>
         </div>
     )
 }
